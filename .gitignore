@@ -1,0 +1,6 @@
+/bower_components
+/node_modules
+/scss
+/*.sublime-project
+/*.sublime-workspace
+/www/js/lib
