@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-<html data-ng-app="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>MKN</title>
-    <link type="text/css" href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" href="js/lib/Bootflat/bootflat/css/bootflat.min.css" rel="stylesheet">
-    <link type="text/css" href="js/lib/textAngular/src/textAngular.css" rel="stylesheet" />
-    <link type="text/css" href="js/lib/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link type="text/css" href="js/lib/ui-select/dist/select.min.css" rel="stylesheet" />
-  </head>
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<title>MKN</title>
+		<!-- bootstrap stylesheet -->
+		<link type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- custom stylesheet -->
+		<link type="text/css" href="css/custom.css" rel="stylesheet">
+		<!-- Include angular-loader to allow modules to be loaded in any order. -->
+		<!-- <script src="node_modules/angular-loader/angular-loader.js"></script> -->
+	</head>
 
-  <body>
-    <div class="container">
-      <header data-ng-include="'templates/includes/header.html'"></header>
-      <div ui-view class="container main-content">
-        <div class="loading-app">Loading application...</div>
-      </div>
-      <footer data-ng-include="'templates/includes/footer.html'"></footer>
-      <div data-ng-include="'templates/includes/loader.html'"></div>
-    </div>
-    <script src="js/lib/requirejs/require.js" data-main="js/main.js"></script>
-  </body>
+	<body>
+		<div class="container">
+			<!-- header -->
+			<header data-ng-include="'templates/includes/header.html'"></header>		
+			<!-- body -->
+			<div data-ng-view=""></div>
+			<!-- footer -->
+			<footer data-ng-include="'templates/includes/footer.html'"></footer>
+		</div>
+
+		<script data-main="js/main" src="libs/requirejs/require.js"></script>
+	</body>
 </html>

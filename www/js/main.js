@@ -1,44 +1,33 @@
-require.config({
-  baseUrl: 'js/',
-  waitSeconds: 60,
-  paths: {
-    'domReady': 'lib/domReady/domReady',
-    'angular': 'lib/angular/angular.min',
-    'angular-animate': 'lib/angular-animate/angular-animate.min',
-    "angular-ui-router": "lib/angular-ui-router/release/angular-ui-router.min",
-    'templates': '../templates',
-    'text': 'lib/text/text',
-    'jquery': 'lib/jquery/dist/jquery.min',
-    'bootstrap': 'lib/bootstrap/dist/js/bootstrap.min',
-    'lodash': 'lib/lodash/dist/lodash.min',
-    'textAngular-rangy': 'lib/textAngular/dist/textAngular-rangy.min',
-    'textAngular-sanitize': 'lib/textAngular/dist/textAngular-sanitize.min',
-    'textAngular': 'lib/textAngular/dist/textAngular.min',
-    'ngIdle': 'lib/ng-idle/angular-idle.min',
-    'angular-ui-bootstrab': 'lib/angular-bootstrap/ui-bootstrap-tpls.min',
-    'ui-select': 'lib/ui-select/dist/select.min',
-    'angular-dialog': 'lib/angular-dialog-service/dist/dialogs.min'
-  },
+/*global require*/
+'use strict';
 
-  shim: {
-    'angular':           {deps:['jquery'], exports: 'angular'},
-    'angular-ui-router': {deps:['angular']},
-    'angular-animate':   {deps:['angular'], exports: 'ngAnimate'},
-    'rangy-selection':   {deps:['rangy']},
-    'textAngular-sanitize': {deps:['angular']},
-    'textAngular': {deps:['angular', 'textAngular-rangy'], exports: 'textAngular'},
-    'lodash': {exports: '_'},
-    'bootstrap': {deps:['jquery']},
-    'ngIdle': {deps:['angular']},
-    'angular-ui-bootstrab': {deps:['angular', 'bootstrap']},
-    'ui-select': {deps:['angular', 'bootstrap']},
-    'angular-dialog': {deps:['angular-ui-bootstrab']}
-  }
+require.config({
+	paths: {
+		angular: '../libs/angular/angular',
+		angularRoute: '../libs/angular-route/angular-route',
+		bootstrap: '../libs/bootstrap/dist/js/bootstrap.min',
+		angularuibootstrab: '../libs/angular-bootstrap/ui-bootstrap-tpls.min',
+		jquery: '../libs/jquery/dist/jquery.min'
+	},
+	shim: {
+		angular: {
+			exports: 'angular'
+		},
+		angularRoute: {
+			deps : ['angular']
+		},
+		bootstrap: {
+			deps: ['jquery']
+		},
+		angularuibootstrab: {
+			deps: ['angular', 'bootstrap']
+		}
+	}
 });
 
-define([
-    'mkn'
-  ], function() {
-
-  require(['app-config']);
+define(['mkn'], 
+	function() {
+	require(['angular', 'app-config'], function (angular) {
+		angular.bootstrap(document, ['mkn']);
+	});
 });
