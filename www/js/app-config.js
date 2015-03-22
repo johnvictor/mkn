@@ -1,0 +1,6 @@
+define([
+    'domReady!'
+  ], function(document) {
+
+
+});

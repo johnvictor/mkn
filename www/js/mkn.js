@@ -7,7 +7,7 @@ define([
     'ngIdle',
     'angular-dialog'
   ], function() {
-  var MKN = angular.module('MKN', ['ui.router', 'ui.bootstrap', 'ui.select', 'textAngular', 'ngSanitize', 'ngIdle', 'dialogs.main']);
+  var MKN = angular.module('mkn', ['ui.router', 'ui.bootstrap', 'ui.select', 'textAngular', 'ngSanitize', 'ngIdle', 'dialogs.main']);
 
   window.MKN = MKN;
 

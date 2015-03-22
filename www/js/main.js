@@ -36,12 +36,9 @@ require.config({
   }
 });
 
-// define([
-//     'mkn'
-//   ], function() {
+define([
+    'mkn'
+  ], function() {
 
-//   require(['app-config'], function() {
-//     // Do opertations that is needed after loading of your app configuration
-//     angular.bootstrap(document, ['mkn']);
-//   });
-// });
+  require(['app-config']);
+});
