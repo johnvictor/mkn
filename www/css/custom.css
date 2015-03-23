@@ -1,0 +1,15 @@
+/*Styles*/
+/* header */
+header{background: url(../images/veggies2.jpg) top center no-repeat; display: block; min-height: 30em; background-size: 100%;}
+/* navigation */
+.navbar-fixed-top{top: 4em;left: 4em;background-color: #33ff33;}
+.navbar-default .navbar-nav>li>a{color: #fff;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: #fff; color: #555;
+	-webkit-transition-duration:0.6s;
+}
+/*container */
+.container{width:100%;}
+/*footer*/
+footer{background: #eee; padding: 1em;}
