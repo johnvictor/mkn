@@ -1,8 +1,8 @@
 /*Styles*/
 /* header */
-header{background: url(../images/veggies2.jpg) top center no-repeat; display: block; min-height: 30em; background-size: 100%;}
+/*header{background: url(../images/veggies2.jpg) top center no-repeat; display: block; min-height: 30em; background-size: 100%;}*/
 /* navigation */
-.navbar-fixed-top{top: 4em;left: 4em;background-color: #33ff33;}
+.navbar-fixed-top{/*top: 4em;left: 4em;*/background-color: #33ff33;}
 .navbar-default .navbar-nav>li>a{color: #fff;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>li>a:hover{
@@ -11,5 +11,9 @@ header{background: url(../images/veggies2.jpg) top center no-repeat; display: bl
 }
 /*container */
 .container{width:100%;}
+/*carousel*/
+.carousel{position: relative;top: 2em; width: 100%; background: #fff;}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{height: 35em;}
+.carousel-control.left, .carousel-control.right{background-color: #eee;}
 /*footer*/
-footer{background: #eee; padding: 1em;}
+footer{background: #eee; padding: 1em;position: relative;}
