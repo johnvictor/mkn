@@ -1,9 +1,9 @@
-<div ng-controller="HomeController">
+<div>
     <h4>{{homeMessage}}</h4>
     <div class="carousel">
     <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide}}" style="margin:auto;">
+      <slide ng-repeat="slide in slides">
+        <img ng-src="{{slide}}" style="margin:auto;" active="slide.active">
         <div class="carousel-caption">
           <p>{{slide.text}}</p>
         </div>
