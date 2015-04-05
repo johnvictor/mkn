@@ -8,6 +8,10 @@
 .navbar-default .navbar-nav>li>a:hover{
 	background-color: #fff; color: #555;
 	-webkit-transition-duration:0.6s;
+	-moz-transition-duration:0.6s;
+	-o-transition-duration:0.6s;
+	-ms-transition-duration:0.6s;
+	transition-duration:0.6s;
 }
 /*container */
 .container{width:100%;}
@@ -15,5 +19,12 @@
 .carousel{position: relative;top: 2em; width: 100%; background: #fff;}
 .carousel-inner>.item>img, .carousel-inner>.item>a>img{height: 35em;}
 .carousel-control.left, .carousel-control.right{background-color: #eee;}
+/*Login Modal*/
+.modal.in .modal-dialog{
+	-webkit-transform: translate3d(0,50%,0);
+	-moz-transform: translate3d(0,50%,0);
+    -o-transform: translate3d(0,50%,0);
+    -ms-o-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);}
 /*footer*/
 footer{background: #eee; padding: 1em;position: relative;}
