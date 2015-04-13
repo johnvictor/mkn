@@ -1,36 +1,18 @@
-# mkn
-a vegetable merchant app
+# MKN
+**_a vegetable merchant app_**
 
-# install git bash
-```commandline
-install git bash
-```
+## How to run
 
-# install nodejs from link : https://nodejs.org/
+Install bowerjs.
 
-```bash
-$ npm install express
-```
+Open command prompt and navigate to project directory.
 
-# Install dependencies:
-```bash
-$ npm install
-```
+Run `**bower install**` 
 
- # Start the server:
-```bash
-$ node server.js
-```
+It'll download the libraries to **bower_components** dir.
 
-# install bowerjs 
-$ npm install -g bower
+Create folder **lib** under **www** directory.
 
-# install dependencies listed in bower.json 
-$ bower install
+Copy the libraries from **bower_components** to **www/lib**
 
-#create folder /www/lib
-
-# copy files inside '/bower_components' to /www/lib
-
-# run node: navigate to /www folder
-node server.js
+Deploy the www folder in tomcat server.
