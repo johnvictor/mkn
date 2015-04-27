@@ -1,14 +1,24 @@
+
 <div>
  <!-- Carousel -->
-    <div class="carousel">
+    <div class="carousel slide">
     <carousel interval="myInterval">
       <slide ng-repeat="slide in slides">
-        <img ng-src="{{slide}}" style="margin:auto;" active="slide.active">
+        <img ng-src="{{slide.path}}" style="margin:auto; width:100%;"  active="slide.active">
         <div class="carousel-caption">
-          <p>{{slide.text}}</p>
+          <h1>{{slide.caption}}</h1>
         </div>
       </slide>
     </carousel>
   </div>
- <!-- Carousel - end -->
+  </div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-3 col-md-6" ng-repeat="value in values">  <img ng-src="{{value.path}}" style="margin:auto; width:50%; width:50%"  active="slide.active">{{value.caption}}</div>
+  </div>
+  <div class="row">
+     <div class="col-sm-2 col-md-4" ng-repeat="value in values">  <img ng-src="{{value.path}}" style="margin:auto; width:50%; width:50%"  active="slide.active">{{value.caption}}</div>
+  </div>
 </div>
+    

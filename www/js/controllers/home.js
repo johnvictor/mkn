@@ -10,9 +10,35 @@ define([
   $scope.myInterval = 5000;
 
   $scope.slides = [
-    '../../images/veggies2.jpg',
-    '../../images/fruits1.jpg'
+	{
+		path:'../../images/fruits3.jpg',
+		caption:'Fruits'
+	},
+    {
+		path:'../../images/Vegetables1.jpg',
+		caption:"Vegetables"
+	}
   ];
+  
+  $scope.values = [	
+	{
+		path:'../../images/fruits2.jpg',
+		caption:'Fruits2'
+	},
+    {
+		path:'../../images/fruits4.jpg',
+		caption:"Fruits4"
+	},
+	{
+		path:'../../images/veggies2.jpg',
+		caption:"Vegetables"
+	},
+	{
+		path:'../../images/fruits4.jpg',
+		caption:"Fruits"
+	}
+	];
+	
 
   //login modal
    $scope.items = ['item1', 'item2', 'item3'];
