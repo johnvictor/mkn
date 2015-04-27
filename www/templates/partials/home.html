@@ -14,11 +14,16 @@
   </div>
 
   <div class="container">
-    <div class="row">
-    <div class="col-sm-3 col-md-6" ng-repeat="value in values">  <img ng-src="{{value.path}}" style="margin:auto; width:50%; width:50%"  active="slide.active">{{value.caption}}</div>
-  </div>
+   <!-- <div class="row">
+    <div class="col-sm-3 col-md-6 product" ng-repeat="value in values">  <img ng-src="{{value.path}}" class="product" active="slide.active">{{value.caption}}</div>
+  </div> -->
   <div class="row">
-     <div class="col-sm-2 col-md-4" ng-repeat="value in values">  <img ng-src="{{value.path}}" style="margin:auto; width:50%; width:50%"  active="slide.active">{{value.caption}}</div>
+     <div class="col-md-4" ng-repeat="value in values"> 
+      <div class="product">
+       <img ng-src="{{value.path}}" class=""  active="slide.active">
+       <span>{{value.caption}}</span>
+     </div>
+   </div>
   </div>
 </div>
     

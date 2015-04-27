@@ -28,7 +28,9 @@
     transform: translate3d(0,50%,0);}
 /*footer*/
 footer{background:  #0E141B; padding:0.1em;position: relative;}
-    .twoRow .navbar-collapse {
+
+/***********/
+.twoRow .navbar-collapse {
         clear: left;
     }
 .searchbox{
@@ -36,5 +38,9 @@ footer{background:  #0E141B; padding:0.1em;position: relative;}
 	width:100%;
 }
 body{
-	background : #FFEBC2;
+	
 }
+/* product */
+.product{height: 20em; border-right: 1px solid #eee; border-bottom: 1px solid #eee; margin-top: 1em;}
+.product img{width: 100%; max-height: 90%;margin-bottom: 0.2em;}
+.product span{margin: 1em;}
