@@ -4,7 +4,7 @@
     <div class="carousel slide">
     <carousel interval="myInterval">
       <slide ng-repeat="slide in slides">
-        <img ng-src="{{slide.path}}" style="margin:auto; width:100%;"  active="slide.active">
+        <img ng-src="{{slide.path}}" style="margin:auto; width:100%;"  active="slide.active" class="img-responsive">
         <div class="carousel-caption">
           <h1>{{slide.caption}}</h1>
         </div>
@@ -22,6 +22,7 @@
       <div class="product">
        <img ng-src="{{value.path}}" class=""  active="slide.active">
        <span>{{value.caption}}</span>
+       <span>{{value.price | currency}}</span>
      </div>
    </div>
   </div>

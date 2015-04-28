@@ -2,11 +2,11 @@
 /* header */
 /*header{background: url(../images/veggies2.jpg) top center no-repeat; display: block; min-height: 30em; background-size: 100%;}*/
 /* navigation */
-.navbar-fixed-top{/*top: 4em;left: 4em;*/background-color: #0E141B;}
+.navbar-fixed-top{/*top: 4em;left: 4em;*/background-color: #003300;}
 .navbar-default .navbar-nav>li>a{color: #fff;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>li>a:hover{
-	background-color: #367990; color: #000000;
+	background-color: #809980; color: #000000;
 	-webkit-transition-duration:0.6s;
 	-moz-transition-duration:0.6s;
 	-o-transition-duration:0.6s;
@@ -17,7 +17,7 @@
 .container{width:100%;}
 /*carousel*/
 .carousel{position: relative; width: 100%; background: #fff;}
-.carousel-inner>.item>img, .carousel-inner>.item>a>img{height: 35em;}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{height:35em;}
 /*.left carousel-control, .right carousel-control{background-color: #eee;}*/
 /*Login Modal*/
 .modal.in .modal-dialog{
@@ -27,19 +27,18 @@
     -ms-o-transform: translate3d(0,50%,0);
     transform: translate3d(0,50%,0);}
 /*footer*/
-footer{background:  #0E141B; padding:0.1em;position: relative;}
+footer{background:  #003300; padding:0.1em;position: relative; color: #FFFFFF;}
 
 /***********/
-.twoRow .navbar-collapse {
-        clear: left;
-    }
 .searchbox{
 	height:auto;
 	width:100%;
 }
+
 body{
-	
+	background: #CCD6CC;
 }
+
 /* product */
 .product{height: 20em; border-right: 1px solid #eee; border-bottom: 1px solid #eee; margin-top: 1em;}
 .product img{width: 100%; max-height: 90%;margin-bottom: 0.2em;}
