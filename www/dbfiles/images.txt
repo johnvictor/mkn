@@ -1,0 +1,24 @@
+{
+	"images":	[
+		{
+			"path":"../images/fruits2.jpg",
+			"caption":"Fruits2",
+			"price":"2.0"
+		},    	
+		{
+			"path":"../images/fruits4.jpg",
+			"caption":"Fruits4",
+			"price":"33.0"
+		},
+		{
+			"path":"../images/veggies2.jpg",
+			"caption":"Vegetables",
+			"price":"3.0"
+		},
+		{
+			"path":"../images/fruits4.jpg",
+			"caption":"Fruits",
+			"price":"1.0"
+		}
+	]
+}
