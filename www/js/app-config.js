@@ -10,7 +10,8 @@ define([
 	'states/aboutus',
 	'states/contact',
 	'states/login-modal',
-  ], function(app, HomeState, VegetablesState, NewArrivalsState, OffersState, AboutusState, ContactState, LoginModal) {
+	'states/signup',
+  ], function(app, HomeState, VegetablesState, NewArrivalsState, OffersState, AboutusState, ContactState, LoginModal, SignUp) {
   	//configure the routes
   	app.config(['$routeProvider', function($routeProvider) {
 	  $routeProvider
@@ -21,6 +22,7 @@ define([
 	    .when('/aboutus', AboutusState)
 	    .when('/contact', ContactState)
 	    .when('/login-modal', LoginModal)
+	    .when('/signup', SignUp)
 	    .otherwise({
 	        redirectTo: '/home'
 	    });

@@ -49,3 +49,7 @@ footer{ padding:1em 0.1em;position: relative; color: #333; border-top: 1px solid
 .panel-content{padding: 15px;}
 /* special offer */
 .offers{display: inline-block;border-right: 1px solid #ddd;height:25em;}
+/* form */
+.form-group label{width: 20%; text-align: right; padding-right: 1em;}
+.form-group input.form-control{display: inline-block; width: 77%;}
+.required{color:#FF0000;}
